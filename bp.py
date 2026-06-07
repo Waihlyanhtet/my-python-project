@@ -405,7 +405,6 @@ if __name__ == "__main__":
     try:
         response = requests.get(GITHUB_KEYS_URL, timeout=15)
         if response.status_code != 200:
-            return False
         
         dev_id = get_device_identity()
         current_time = get_current_time_from_server()
